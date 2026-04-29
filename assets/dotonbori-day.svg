@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Dotonbori by day</title>
+  <desc id="desc">A stylized daytime canal scene in Dotonbori with shops and bridges.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fd4ea"/>
+      <stop offset="1" stop-color="#f7e7bf"/>
+    </linearGradient>
+    <linearGradient id="canal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2e92a7"/>
+      <stop offset="1" stop-color="#16576d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <path d="M0 470h1200v330H0z" fill="url(#canal)"/>
+  <path d="M0 400h1200v92H0z" fill="#e8d1aa"/>
+  <g fill="#ffffff" stroke="#d3c2aa" stroke-width="5">
+    <rect x="70" y="168" width="190" height="232"/>
+    <rect x="292" y="132" width="150" height="268"/>
+    <rect x="476" y="186" width="205" height="214"/>
+    <rect x="714" y="148" width="160" height="252"/>
+    <rect x="900" y="205" width="220" height="195"/>
+  </g>
+  <g fill="#d74334">
+    <rect x="96" y="206" width="138" height="50" rx="6"/>
+    <rect x="500" y="232" width="154" height="52" rx="6"/>
+    <circle cx="792" cy="232" r="50"/>
+  </g>
+  <g fill="#f0b72f">
+    <rect x="318" y="174" width="98" height="70" rx="6"/>
+    <rect x="932" y="242" width="150" height="48" rx="6"/>
+  </g>
+  <path d="M0 438c168 34 262 34 416 0 172-38 302-40 470-2 110 24 210 22 314-16v62H0z" fill="#c6b090"/>
+  <g stroke="#ffffff" stroke-linecap="round" stroke-width="8" opacity=".75">
+    <path d="M80 562c120 30 230 30 354 0"/>
+    <path d="M490 620c160 38 306 38 462 0"/>
+    <path d="M728 530c110 24 218 24 330 0"/>
+  </g>
+  <path d="M100 444h1000" stroke="#7b4b35" stroke-width="18"/>
+  <path d="M150 444v70M1050 444v70" stroke="#7b4b35" stroke-width="16"/>
+</svg>

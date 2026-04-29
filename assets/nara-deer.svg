@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Nara temple garden</title>
+  <desc id="desc">A calm illustrated Nara scene with temple roofs, stone lanterns, trees, and gentle deer in the park.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dceee7"/>
+      <stop offset=".58" stop-color="#f6ead3"/>
+      <stop offset="1" stop-color="#d7d0aa"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bb875"/>
+      <stop offset="1" stop-color="#5d7d46"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ead8b7"/>
+      <stop offset="1" stop-color="#b88d63"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="980" cy="125" r="66" fill="#f1c879" opacity=".72"/>
+  <g fill="#789b70" opacity=".72">
+    <circle cx="105" cy="275" r="128"/>
+    <circle cx="235" cy="220" r="154"/>
+    <circle cx="1010" cy="245" r="138"/>
+    <circle cx="1110" cy="210" r="110"/>
+  </g>
+  <path d="M0 530c190-76 352-86 520-34 182 57 360 36 680-74v378H0z" fill="url(#grass)"/>
+  <path d="M420 800c22-140 96-248 202-324 98 78 164 184 188 324z" fill="url(#path)" opacity=".88"/>
+  <g transform="translate(250 190)">
+    <path d="M0 218h505l-64-70H64z" fill="#263947"/>
+    <path d="M56 150h392l-48-52H104z" fill="#334756"/>
+    <path d="M94 99h316l-38-42H132z" fill="#405768"/>
+    <rect x="58" y="218" width="390" height="112" fill="#8b3f32"/>
+    <rect x="96" y="250" width="52" height="182" fill="#5b302c"/>
+    <rect x="360" y="250" width="52" height="182" fill="#5b302c"/>
+    <rect x="182" y="252" width="142" height="92" fill="#e6d0ab"/>
+    <path d="M182 252h142v22H182z" fill="#be8e54"/>
+  </g>
+  <g fill="#6b6a5c">
+    <path d="M145 485h46l-12 132h-22z"/>
+    <path d="M130 463h76l-26-42h-24z"/>
+    <rect x="138" y="617" width="60" height="18" rx="4"/>
+    <path d="M1012 480h46l-12 132h-22z"/>
+    <path d="M997 458h76l-26-42h-24z"/>
+    <rect x="1005" y="612" width="60" height="18" rx="4"/>
+  </g>
+  <g transform="translate(735 500)">
+    <ellipse cx="112" cy="92" rx="112" ry="52" fill="#b7793f"/>
+    <circle cx="205" cy="58" r="43" fill="#c8874d"/>
+    <path d="M224 35c24-35 54-49 84-46-25 17-38 42-42 72z" fill="#7d5131"/>
+    <path d="M193 35c-25-32-51-44-78-41 22 18 32 39 34 67z" fill="#7d5131"/>
+    <path d="M67 133l-24 86h31l28-80z" fill="#86552f"/>
+    <path d="M153 134l13 86h31l1-84z" fill="#86552f"/>
+    <circle cx="218" cy="54" r="6" fill="#171513"/>
+    <path d="M230 76c-18 13-38 14-60 3" stroke="#5d3a22" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <circle cx="56" cy="80" r="10" fill="#ead7b7"/>
+    <circle cx="98" cy="62" r="8" fill="#ead7b7"/>
+  </g>
+  <g transform="translate(250 560)" opacity=".86">
+    <ellipse cx="65" cy="48" rx="62" ry="30" fill="#9a6134"/>
+    <circle cx="116" cy="26" r="23" fill="#a86c3b"/>
+    <path d="M125 12c16-22 33-31 51-28-15 12-22 27-24 46z" fill="#684226"/>
+    <path d="M93 77l-15 58h20l18-54z" fill="#704626"/>
+    <path d="M36 78l-17 57h20l18-52z" fill="#704626"/>
+    <circle cx="123" cy="25" r="4" fill="#171513"/>
+  </g>
+  <g stroke="#f2ead8" stroke-width="5" stroke-linecap="round" opacity=".58">
+    <path d="M514 620c62 18 134 18 198 0"/>
+    <path d="M475 690c92 28 206 28 300 0"/>
+  </g>
+</svg>

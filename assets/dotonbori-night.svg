@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Dotonbori at night</title>
+  <desc id="desc">A stylized night view of Dotonbori with neon signs, canal reflections, and Osaka storefronts.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#172a46"/>
+      <stop offset="1" stop-color="#07111d"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123d55"/>
+      <stop offset="1" stop-color="#07131f"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="1010" cy="100" r="52" fill="#f6d889" opacity=".9"/>
+  <path d="M0 454h1200v346H0z" fill="url(#water)"/>
+  <path d="M0 431c150 20 260-28 405-10 168 20 272 70 429 34 151-35 242-14 366 21v56H0z" fill="#273244"/>
+  <g fill="#10151d">
+    <rect x="42" y="210" width="190" height="230"/>
+    <rect x="254" y="164" width="150" height="282"/>
+    <rect x="438" y="196" width="210" height="238"/>
+    <rect x="680" y="154" width="178" height="286"/>
+    <rect x="896" y="220" width="238" height="226"/>
+  </g>
+  <g filter="url(#glow)">
+    <rect x="70" y="242" width="134" height="54" rx="8" fill="#e43d30"/>
+    <rect x="276" y="196" width="104" height="88" rx="10" fill="#f4c247"/>
+    <rect x="466" y="232" width="154" height="56" rx="8" fill="#18a7a1"/>
+    <rect x="710" y="188" width="118" height="96" rx="10" fill="#e75a8a"/>
+    <rect x="928" y="252" width="170" height="56" rx="8" fill="#5fb9ff"/>
+    <circle cx="344" cy="338" r="38" fill="#f4f0d0"/>
+    <path d="M516 337c38-58 104-58 142 0-40 44-102 44-142 0z" fill="#ff7f32"/>
+  </g>
+  <g stroke-linecap="round" stroke-width="10" opacity=".65">
+    <path d="M90 520c86 22 148 22 236 0" stroke="#e43d30"/>
+    <path d="M280 574c102 28 208 28 318 0" stroke="#f4c247"/>
+    <path d="M615 527c82 22 166 22 252 0" stroke="#18a7a1"/>
+    <path d="M824 610c96 24 198 24 296 0" stroke="#5fb9ff"/>
+  </g>
+  <path d="M0 445h1200" stroke="#f7f0d2" stroke-width="6" opacity=".65"/>
+  <g fill="#ffffff" opacity=".85">
+    <circle cx="170" cy="126" r="3"/><circle cx="238" cy="78" r="2"/><circle cx="430" cy="112" r="3"/>
+    <circle cx="798" cy="82" r="2"/><circle cx="1110" cy="168" r="3"/><circle cx="636" cy="64" r="2"/>
+  </g>
+</svg>

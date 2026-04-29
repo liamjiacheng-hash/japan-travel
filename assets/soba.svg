@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Kyoto soba</title>
+  <desc id="desc">A stylized bowl of soba noodles with broth, green onion, and chopsticks.</desc>
+  <rect width="1200" height="760" fill="#eef1e6"/>
+  <ellipse cx="600" cy="478" rx="360" ry="150" fill="#29495a"/>
+  <path d="M265 455h670c-24 158-142 238-335 238S289 613 265 455z" fill="#3f6476"/>
+  <ellipse cx="600" cy="444" rx="340" ry="138" fill="#ffffff"/>
+  <ellipse cx="600" cy="444" rx="286" ry="98" fill="#5a331f"/>
+  <g stroke="#c9a15c" stroke-width="14" stroke-linecap="round" fill="none">
+    <path d="M394 410c84-44 172 48 250 0s150-36 204 14"/>
+    <path d="M378 456c86-50 174 44 260 0s148-30 198 18"/>
+    <path d="M430 498c72-38 132 24 210 0s122-26 178 12"/>
+  </g>
+  <g fill="#58a85e">
+    <circle cx="475" cy="398" r="14"/><circle cx="522" cy="432" r="12"/><circle cx="690" cy="400" r="14"/>
+    <circle cx="744" cy="454" r="12"/><circle cx="586" cy="492" r="13"/>
+  </g>
+  <rect x="722" y="108" width="28" height="430" rx="14" fill="#8b4d2e" transform="rotate(58 736 323)"/>
+  <rect x="772" y="102" width="28" height="430" rx="14" fill="#8b4d2e" transform="rotate(58 786 317)"/>
+</svg>

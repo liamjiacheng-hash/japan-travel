@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Osaka Castle</title>
+  <desc id="desc">A stylized Osaka Castle with stone walls, green roofs, and a spring sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bde2f4"/>
+      <stop offset="1" stop-color="#f8efe3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="1000" cy="110" r="70" fill="#f5c67a" opacity=".75"/>
+  <path d="M0 615c180-64 390-68 590-18 238 59 404 8 610-42v245H0z" fill="#7da76b"/>
+  <path d="M290 600h620l80 145H210z" fill="#8c8e89"/>
+  <g fill="#6f716d" opacity=".55">
+    <circle cx="292" cy="680" r="9"/><circle cx="382" cy="636" r="10"/><circle cx="516" cy="704" r="8"/>
+    <circle cx="650" cy="652" r="9"/><circle cx="774" cy="708" r="10"/><circle cx="902" cy="642" r="8"/>
+  </g>
+  <g transform="translate(335 110)">
+    <path d="M260 0l32 70h-64z" fill="#c4922e"/>
+    <rect x="250" y="58" width="20" height="60" fill="#344f5c"/>
+    <path d="M130 120h260l-34 48H164z" fill="#173b48"/>
+    <rect x="170" y="168" width="180" height="70" fill="#f4f1de" stroke="#b98645" stroke-width="7"/>
+    <path d="M95 232h330l-44 58H139z" fill="#174d54"/>
+    <rect x="136" y="290" width="248" height="78" fill="#fff7df" stroke="#b98645" stroke-width="8"/>
+    <path d="M54 362h412l-55 70H109z" fill="#176064"/>
+    <rect x="112" y="432" width="296" height="96" fill="#fff9e8" stroke="#b98645" stroke-width="9"/>
+    <path d="M0 520h520l-70 84H70z" fill="#1b6b68"/>
+    <rect x="80" y="604" width="360" height="44" fill="#f4f1de"/>
+    <g fill="#21343c">
+      <rect x="196" y="190" width="30" height="28"/><rect x="292" y="190" width="30" height="28"/>
+      <rect x="176" y="318" width="34" height="30"/><rect x="244" y="318" width="34" height="30"/><rect x="312" y="318" width="34" height="30"/>
+      <rect x="154" y="462" width="38" height="34"/><rect x="238" y="462" width="38" height="34"/><rect x="322" y="462" width="38" height="34"/>
+    </g>
+  </g>
+  <g fill="#eea9b8" opacity=".8">
+    <circle cx="92" cy="568" r="22"/><circle cx="122" cy="548" r="16"/><circle cx="1080" cy="520" r="24"/><circle cx="1038" cy="552" r="18"/>
+  </g>
+</svg>

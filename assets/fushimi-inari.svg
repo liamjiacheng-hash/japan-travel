@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Fushimi Inari torii gates</title>
+  <desc id="desc">A stylized path through red torii gates at Fushimi Inari Shrine.</desc>
+  <defs>
+    <linearGradient id="forest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#24442f"/>
+      <stop offset="1" stop-color="#0f2318"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e5c59b"/>
+      <stop offset="1" stop-color="#87563d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#forest)"/>
+  <path d="M0 600c190-110 355-148 600-148s410 38 600 148v200H0z" fill="url(#path)"/>
+  <g opacity=".32" fill="#467a4f">
+    <circle cx="115" cy="130" r="96"/><circle cx="302" cy="86" r="125"/><circle cx="516" cy="150" r="112"/>
+    <circle cx="788" cy="92" r="122"/><circle cx="1030" cy="160" r="150"/>
+  </g>
+  <g stroke="#311915" stroke-width="16" stroke-linecap="square">
+    <path d="M222 220h756"/><path d="M176 280h848"/>
+  </g>
+  <g fill="#d83622">
+    <rect x="218" y="250" width="54" height="455"/>
+    <rect x="928" y="250" width="54" height="455"/>
+    <rect x="280" y="307" width="48" height="340"/>
+    <rect x="872" y="307" width="48" height="340"/>
+    <rect x="342" y="360" width="42" height="236"/>
+    <rect x="816" y="360" width="42" height="236"/>
+    <rect x="406" y="406" width="36" height="160"/>
+    <rect x="758" y="406" width="36" height="160"/>
+  </g>
+  <g fill="#f04b2f">
+    <rect x="185" y="194" width="830" height="42" rx="5"/>
+    <rect x="154" y="260" width="892" height="40" rx="5"/>
+    <rect x="250" y="300" width="700" height="34" rx="5"/>
+    <rect x="315" y="352" width="570" height="32" rx="5"/>
+    <rect x="380" y="396" width="440" height="28" rx="5"/>
+  </g>
+  <path d="M520 800c18-110 40-218 80-310 40 92 62 200 80 310z" fill="#f3d8b0" opacity=".36"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Takoyaki</title>
+  <desc id="desc">A stylized plate of takoyaki with sauce, bonito flakes, and green onion.</desc>
+  <rect width="1200" height="760" fill="#f5efe4"/>
+  <ellipse cx="600" cy="455" rx="420" ry="190" fill="#e5ded0"/>
+  <ellipse cx="600" cy="430" rx="390" ry="160" fill="#ffffff"/>
+  <g>
+    <circle cx="390" cy="390" r="78" fill="#c9813e"/>
+    <circle cx="520" cy="345" r="78" fill="#d28b45"/>
+    <circle cx="655" cy="382" r="78" fill="#c9813e"/>
+    <circle cx="782" cy="340" r="78" fill="#d98f47"/>
+    <circle cx="482" cy="485" r="78" fill="#d98f47"/>
+    <circle cx="620" cy="512" r="78" fill="#c9813e"/>
+    <circle cx="752" cy="472" r="78" fill="#d28b45"/>
+  </g>
+  <g stroke="#4d2316" stroke-width="16" stroke-linecap="round" opacity=".85" fill="none">
+    <path d="M335 374c42 24 85 24 128-2"/>
+    <path d="M468 326c48 26 94 26 136 0"/>
+    <path d="M606 366c44 26 90 28 132 4"/>
+    <path d="M730 322c44 24 86 24 128 0"/>
+    <path d="M424 470c42 24 86 24 128-2"/>
+    <path d="M560 497c44 24 90 24 132 0"/>
+    <path d="M692 456c44 26 90 28 132 2"/>
+  </g>
+  <g fill="#f8f0d5" opacity=".9">
+    <path d="M350 345l85-35-30 58z"/><path d="M545 290l94 18-70 42z"/><path d="M780 286l70 46-88 8z"/>
+    <path d="M450 430l84 28-70 40z"/><path d="M620 456l94-20-48 66z"/>
+  </g>
+  <g stroke="#3e8e4c" stroke-width="8" stroke-linecap="round">
+    <path d="M322 408l62-18"/><path d="M495 374l70-24"/><path d="M648 422l74-22"/><path d="M750 378l82-30"/>
+    <path d="M476 526l78-26"/><path d="M596 558l84-24"/><path d="M735 514l74-26"/>
+  </g>
+</svg>

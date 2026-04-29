@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Okonomiyaki</title>
+  <desc id="desc">A stylized okonomiyaki pancake with sauce, mayonnaise lines, and bonito flakes.</desc>
+  <rect width="1200" height="760" fill="#f4eee1"/>
+  <circle cx="600" cy="405" r="250" fill="#b8753a"/>
+  <circle cx="600" cy="405" r="222" fill="#d08b48"/>
+  <g stroke="#4c2116" stroke-width="26" stroke-linecap="round" opacity=".9">
+    <path d="M420 304c125 58 242 58 360 0"/>
+    <path d="M377 402c148 68 300 68 446 0"/>
+    <path d="M430 502c110 52 228 52 338 0"/>
+  </g>
+  <g stroke="#fff2da" stroke-width="20" stroke-linecap="round">
+    <path d="M376 255c78 232 252 332 454 304"/>
+    <path d="M481 205c46 232 184 370 368 390"/>
+    <path d="M592 186c16 230 102 362 236 448"/>
+    <path d="M705 206c-22 184 10 316 104 408"/>
+  </g>
+  <g fill="#4a9a56">
+    <rect x="435" y="286" width="60" height="12" rx="6" transform="rotate(18 435 286)"/>
+    <rect x="558" y="230" width="72" height="12" rx="6" transform="rotate(-10 558 230)"/>
+    <rect x="733" y="346" width="68" height="12" rx="6" transform="rotate(22 733 346)"/>
+    <rect x="482" y="486" width="76" height="12" rx="6" transform="rotate(-20 482 486)"/>
+    <rect x="662" y="556" width="70" height="12" rx="6" transform="rotate(12 662 556)"/>
+  </g>
+  <g fill="#f3dfb7" opacity=".86">
+    <path d="M486 250l120 24-96 58z"/><path d="M692 268l96 54-112 26z"/>
+    <path d="M382 420l118-18-54 82z"/><path d="M638 442l128 28-96 58z"/>
+  </g>
+</svg>
