@@ -262,6 +262,20 @@
     .pill.gold { color: var(--gold); border-color: rgba(189,124,25,.35); }
     .pill.indigo { color: var(--indigo); border-color: rgba(64,90,138,.35); }
 
+    .jp {
+      color: var(--teal);
+      font-size: .9em;
+      font-weight: 700;
+    }
+
+    .jp::before { content: "（"; }
+    .jp::after { content: "）"; }
+
+    .hero .jp {
+      color: #a7f0df;
+      text-shadow: 0 1px 10px rgba(0,0,0,.35);
+    }
+
     .panel {
       border: 1px solid var(--line);
       border-radius: var(--r);
@@ -403,6 +417,37 @@
       box-shadow: var(--shadow);
     }
 
+    .jp-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .jp-card h3 {
+      margin: 0 0 12px;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+
+    .jp-card dl {
+      display: grid;
+      grid-template-columns: minmax(86px, .8fr) 1.2fr;
+      gap: 8px 12px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .jp-card dt {
+      margin: 0;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .jp-card dd { margin: 0; }
+
     .tool-card .tag {
       display: inline-block;
       margin-bottom: 10px;
@@ -491,24 +536,24 @@
     <div class="hero-inner">
       <div class="eyebrow">上海出发 · 5 人同行 · 休闲文化游 · 2026 黄金周</div>
       <h1>五一去哪儿：关西5天慢游</h1>
-      <p>五天简版：5/2 抵达难波夜逛；5/3 大阪城、中之岛、法善寺横丁；5/4 京都伏见稻荷、清水寺、祇园茶点；5/5 奈良公园、东大寺、奈良町；5/6 难波慢买慢吃后去机场。</p>
+      <p>五天简版：5/2 抵达难波 <span class="jp">なんば</span> 夜逛；5/3 大阪城 <span class="jp">大阪城</span>、中之岛 <span class="jp">中之島</span>、法善寺横丁 <span class="jp">法善寺横丁</span>；5/4 京都伏见稻荷 <span class="jp">伏見稲荷</span>、清水寺 <span class="jp">清水寺</span>、祇园 <span class="jp">祇園</span> 茶点；5/5 奈良公园 <span class="jp">奈良公園</span>、东大寺 <span class="jp">東大寺</span>、奈良町 <span class="jp">ならまち</span>；5/6 难波慢买慢吃后去机场。</p>
 
       <div class="hero-grid">
         <div class="hero-stat">
           <b>住宿</b>
-          <span>住日本桥 3-chome-1-25 Nipponbashi，步行到难波、黑门市场、道顿堀</span>
+          <span>住日本桥 <span class="jp">日本橋</span> 3-chome-1-25 Nipponbashi，步行到难波 <span class="jp">なんば</span>、黑门市场 <span class="jp">黒門市場</span>、道顿堀 <span class="jp">道頓堀</span></span>
         </div>
         <div class="hero-stat">
           <b>饮食</b>
-          <span>大阪粉物与串炸、京都抹茶荞麦面、奈良柿叶寿司，5 人优先少排队</span>
+          <span>大阪粉物 <span class="jp">粉もん</span> 与串炸 <span class="jp">串カツ</span>、京都抹茶 <span class="jp">抹茶</span> 荞麦面 <span class="jp">そば</span>、奈良柿叶寿司 <span class="jp">柿の葉寿司</span></span>
         </div>
         <div class="hero-stat">
           <b>交通</b>
-          <span>机场走南海 Rapi:t，奈良走近铁，京都走地铁加京阪，尽量少换乘</span>
+          <span>机场走南海 Rapi:t <span class="jp">ラピート</span>，奈良走近铁 <span class="jp">近鉄</span>，京都走地铁加京阪 <span class="jp">京阪電車</span></span>
         </div>
         <div class="hero-stat">
           <b>文化</b>
-          <span>大阪市井、京都寺社茶点、奈良古都与鹿，晚上回难波慢慢吃</span>
+          <span>大阪市井、京都寺社 <span class="jp">寺社</span> 茶点、奈良古都与鹿 <span class="jp">鹿</span>，晚上回难波慢慢吃</span>
         </div>
       </div>
     </div>
@@ -522,6 +567,7 @@
       <a href="#day3">5/4 京都一日</a>
       <a href="#day4">5/5 奈良一日</a>
       <a href="#day5">5/6 回程前</a>
+      <a href="#japanese">日语速查</a>
       <a href="#food">吃什么</a>
       <a href="#tools">交通票券</a>
     </div>
@@ -532,7 +578,7 @@
       <div class="wrap">
         <div class="section-head">
           <h2>先看重点</h2>
-          <p>五个人一起旅行，最舒服的节奏是“上午一个核心文化点，下午一个街区，晚上回难波吃饭散步”。你们住在日本桥/难波，天然适合每天回到熟悉区域收尾。</p>
+          <p>五个人一起旅行，最舒服的节奏是“上午一个核心文化点，下午一个街区，晚上回难波 <span class="jp">なんば</span> 吃饭散步”。你们住在日本桥 <span class="jp">日本橋</span>/难波 <span class="jp">なんば</span>，天然适合每天回到熟悉区域收尾。</p>
         </div>
         <div class="notice">
           <div class="notice-item">
@@ -545,11 +591,87 @@
           </div>
           <div class="notice-item">
             <strong>文化感优先</strong>
-            <p>大阪看市井和城郭，京都看寺社与老街，奈良看古都和自然。商场购物只放在雨天、累了或回程前。</p>
+            <p>大阪 <span class="jp">大阪</span> 看市井和城郭，京都 <span class="jp">京都</span> 看寺社 <span class="jp">寺社</span> 与老街，奈良 <span class="jp">奈良</span> 看古都和自然。商场购物只放在雨天、累了或回程前。</p>
           </div>
           <div class="notice-item">
             <strong>回程留量</strong>
-            <p>5 月 6 日 21:00 飞上海，建议 18:30 左右到关西机场。17:30 前回住处取行李，17:45-18:00 从难波出发。</p>
+            <p>5 月 6 日 21:00 飞上海，建议 18:30 左右到关西机场 <span class="jp">関西国際空港</span>。17:30 前回住处取行李，17:45-18:00 从难波 <span class="jp">なんば</span> 出发。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="japanese">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>日语速查</h2>
+          <p>现场看招牌、菜单、车站指示时，用这一栏对照。括号里的日语就是你可能会看到的写法。</p>
+        </div>
+        <div class="grid-3">
+          <div class="jp-card">
+            <h3>地点</h3>
+            <dl>
+              <dt>关西机场</dt><dd>関西国際空港</dd>
+              <dt>难波</dt><dd>なんば / 難波</dd>
+              <dt>日本桥</dt><dd>日本橋</dd>
+              <dt>黑门市场</dt><dd>黒門市場</dd>
+              <dt>道顿堀</dt><dd>道頓堀</dd>
+              <dt>戎桥</dt><dd>戎橋</dd>
+              <dt>大阪城</dt><dd>大阪城</dd>
+              <dt>中之岛</dt><dd>中之島</dd>
+              <dt>法善寺横丁</dt><dd>法善寺横丁</dd>
+              <dt>伏见稻荷</dt><dd>伏見稲荷大社</dd>
+              <dt>清水寺</dt><dd>清水寺</dd>
+              <dt>祇园</dt><dd>祇園</dd>
+              <dt>奈良公园</dt><dd>奈良公園</dd>
+              <dt>东大寺</dt><dd>東大寺</dd>
+              <dt>春日大社</dt><dd>春日大社</dd>
+              <dt>奈良町</dt><dd>ならまち</dd>
+            </dl>
+          </div>
+          <div class="jp-card">
+            <h3>餐馆/店名</h3>
+            <dl>
+              <dt>章鱼烧 Wanaka</dt><dd>たこ焼道楽 わなか</dd>
+              <dt>章鱼烧十八番</dt><dd>たこ焼十八番</dd>
+              <dt>章鱼烧 Kukuru</dt><dd>たこ家道頓堀くくる</dd>
+              <dt>551 蓬莱</dt><dd>551蓬莱</dd>
+              <dt>力克老爷爷</dt><dd>りくろーおじさんの店</dd>
+              <dt>味乃家</dt><dd>味乃家</dd>
+              <dt>美津の</dt><dd>お好み焼 美津の</dd>
+              <dt>祇园辻利</dt><dd>祇園辻利</dd>
+              <dt>茶寮都路里</dt><dd>茶寮都路里</dd>
+              <dt>志津香釜饭</dt><dd>釜めし志津香</dd>
+              <dt>柿叶寿司田中</dt><dd>柿の葉すし本舗たなか</dd>
+              <dt>中谷堂</dt><dd>中谷堂</dd>
+              <dt>串炸达摩</dt><dd>串かつだるま</dd>
+              <dt>麺屋丈六</dt><dd>麺屋丈六</dd>
+            </dl>
+          </div>
+          <div class="jp-card">
+            <h3>美食/菜单词</h3>
+            <dl>
+              <dt>章鱼烧</dt><dd>たこ焼き</dd>
+              <dt>大阪烧</dt><dd>お好み焼き</dd>
+              <dt>炒面</dt><dd>焼きそば</dd>
+              <dt>串炸</dt><dd>串カツ / 串かつ</dd>
+              <dt>粉物</dt><dd>粉もん</dd>
+              <dt>荞麦面</dt><dd>そば / 蕎麦</dd>
+              <dt>乌冬</dt><dd>うどん</dd>
+              <dt>拉面</dt><dd>ラーメン</dd>
+              <dt>咖喱</dt><dd>カレー</dd>
+              <dt>定食</dt><dd>定食</dd>
+              <dt>饭团</dt><dd>おにぎり</dd>
+              <dt>稻荷寿司</dt><dd>いなり寿司</dd>
+              <dt>柿叶寿司</dt><dd>柿の葉寿司</dd>
+              <dt>釜饭</dt><dd>釜めし</dd>
+              <dt>艾草麻糬</dt><dd>よもぎ餅</dd>
+              <dt>抹茶芭菲</dt><dd>抹茶パフェ</dd>
+              <dt>豆腐料理</dt><dd>豆腐料理</dd>
+              <dt>亲子丼</dt><dd>親子丼</dd>
+              <dt>鹿仙贝</dt><dd>鹿せんべい</dd>
+              <dt>伴手礼</dt><dd>お土産</dd>
+            </dl>
           </div>
         </div>
       </div>
@@ -558,8 +680,8 @@
     <section id="day1">
       <div class="wrap">
         <div class="section-head">
-          <h2>5/2 周六 · 到达大阪</h2>
-          <p>第一晚只做一件事：顺利到难波，吃一顿大阪夜宵，沿河散散步，让大家进入旅行状态。</p>
+          <h2>5/2 周六 · 到达大阪 <span class="jp">大阪</span></h2>
+          <p>第一晚只做一件事：顺利到难波 <span class="jp">なんば</span>，吃一顿大阪夜宵，沿河散散步，让大家进入旅行状态。</p>
         </div>
 
         <article class="day">
@@ -567,49 +689,49 @@
             <img src="assets/dotonbori-night.svg" alt="夜晚的道顿堀街景插画">
             <div class="cover-caption">
               <span>Arrival Night</span>
-              <h3>关西机场 · 难波 · 道顿堀</h3>
+              <h3>关西机场 <span class="jp">関西国際空港</span> · 难波 <span class="jp">なんば</span> · 道顿堀 <span class="jp">道頓堀</span></h3>
             </div>
           </div>
 
           <div class="day-main">
             <div class="meta">
               <span class="pill red">18:00 落地</span>
-              <span class="pill teal">南海难波方向</span>
+              <span class="pill teal">南海难波 <span class="jp">南海なんば</span> 方向</span>
               <span class="pill gold">夜宵优先</span>
               <span class="pill indigo">步行为主</span>
             </div>
 
             <div class="panel panel-pad">
-              <p class="summary">到达关西机场后预留 60-90 分钟给入境和取行李。五个人带行李建议坐南海 Rapi:t，座位固定、节奏稳；如果刚好错过班次，机场急行也能到难波。</p>
+              <p class="summary">到达关西机场 <span class="jp">関西国際空港</span> 后预留 60-90 分钟给入境和取行李。五个人带行李建议坐南海 Rapi:t <span class="jp">ラピート</span>，座位固定、节奏稳；如果刚好错过班次，机场急行 <span class="jp">空港急行</span> 也能到难波 <span class="jp">なんば</span>。</p>
             </div>
 
             <div class="panel timeline">
               <div class="slot">
                 <div class="time">18:00</div>
                 <div>
-                  <h4>抵达关西机场 KIX</h4>
-                  <p>先买/确认 IC 卡、取现金、看南海电铁方向。Rapi:t 全车指定席，行李多时更舒服。</p>
+                  <h4>抵达关西机场 KIX <span class="jp">関西国際空港</span></h4>
+                  <p>先买/确认 IC 卡 <span class="jp">ICカード</span>、取现金、看南海电铁 <span class="jp">南海電鉄</span> 方向。Rapi:t <span class="jp">ラピート</span> 全车指定席，行李多时更舒服。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">19:20</div>
                 <div>
-                  <h4>关西机场 → 南海难波</h4>
-                  <p>Rapi:t 最快约 34 分钟到南海难波。到站后步行或短打车去住处放行李。</p>
+                  <h4>关西机场 <span class="jp">関西国際空港</span> → 南海难波 <span class="jp">南海なんば</span></h4>
+                  <p>Rapi:t <span class="jp">ラピート</span> 最快约 34 分钟到南海难波 <span class="jp">南海なんば駅</span>。到站后步行或短打车去住处放行李。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">20:30</div>
                 <div>
-                  <h4>道顿堀轻松夜逛</h4>
-                  <p>走到戎桥看 Glico 跑步人，沿河散步，感受大阪夜晚的市井热闹。第一晚不要排太久的队。</p>
+                  <h4>道顿堀 <span class="jp">道頓堀</span> 轻松夜逛</h4>
+                  <p>走到戎桥 <span class="jp">戎橋</span> 看 Glico 跑步人，沿河散步，感受大阪夜晚的市井热闹。第一晚不要排太久的队。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">22:00</div>
                 <div>
-                  <h4>回日本桥休息</h4>
-                  <p>便利店补水、买第二天早餐或咖啡。第二天是大阪市内日，体力很值钱。</p>
+                  <h4>回日本桥 <span class="jp">日本橋</span> 休息</h4>
+                  <p>便利店 <span class="jp">コンビニ</span> 补水、买第二天早餐或咖啡 <span class="jp">コーヒー</span>。第二天是大阪市内日，体力很值钱。</p>
                 </div>
               </div>
             </div>
@@ -618,15 +740,15 @@
               <div class="eat-grid">
                 <div class="eat">
                   <b>晚餐</b>
-                  <p>道顿堀吃章鱼烧：わなか Wanaka、十八番、くくる任选一家，看哪家队短。</p>
+                  <p>道顿堀 <span class="jp">道頓堀</span> 吃章鱼烧 <span class="jp">たこ焼き</span>：わなか Wanaka <span class="jp">たこ焼道楽 わなか</span>、十八番 <span class="jp">たこ焼十八番</span>、くくる <span class="jp">たこ家道頓堀くくる</span> 任选一家，看哪家队短。</p>
                 </div>
                 <div class="eat">
                   <b>加餐</b>
-                  <p>551 蓬莱豚馒、便利店冰饮、Pablo/りくろーおじさん芝士蛋糕，适合作为第一晚小甜点。</p>
+                  <p>551 蓬莱豚馒 <span class="jp">551蓬莱 豚まん</span>、便利店冰饮 <span class="jp">コンビニ</span>、Pablo/りくろーおじさん芝士蛋糕 <span class="jp">チーズケーキ</span>，适合作为第一晚小甜点。</p>
                 </div>
                 <div class="eat">
                   <b>备选正餐</b>
-                  <p>如果饿得厉害，直接在千日前/难波吃拉面或居酒屋，不建议第一晚硬排 1 小时名店。</p>
+                  <p>如果饿得厉害，直接在千日前 <span class="jp">千日前</span>/难波 <span class="jp">なんば</span> 吃拉面 <span class="jp">ラーメン</span> 或居酒屋 <span class="jp">居酒屋</span>，不建议第一晚硬排 1 小时名店。</p>
                 </div>
               </div>
             </div>
@@ -634,7 +756,7 @@
             <div class="panel">
               <details>
                 <summary>到得很晚怎么办</summary>
-                <p>如果出机场已经超过 20:00，就直接机场便利店垫一下，进城后吃难波附近的拉面/牛丼。道顿堀拍照可以留到 5/3 晚上。</p>
+                <p>如果出机场已经超过 20:00，就直接机场便利店 <span class="jp">コンビニ</span> 垫一下，进城后吃难波 <span class="jp">なんば</span> 附近的拉面 <span class="jp">ラーメン</span>/牛丼 <span class="jp">牛丼</span>。道顿堀 <span class="jp">道頓堀</span> 拍照可以留到 5/3 晚上。</p>
               </details>
             </div>
           </div>
@@ -645,8 +767,8 @@
     <section id="day2">
       <div class="wrap">
         <div class="section-head">
-          <h2>5/3 周日 · 大阪市内</h2>
-          <p>大阪这天改成城郭与街区慢游：大阪城公园、历史博物馆或天守阁二选一，下午回到中之岛/法善寺横丁，晚上吃大阪味道。</p>
+          <h2>5/3 周日 · 大阪市内 <span class="jp">大阪市内</span></h2>
+          <p>大阪这天改成城郭与街区慢游：大阪城公园 <span class="jp">大阪城公園</span>、历史博物馆 <span class="jp">大阪歴史博物館</span> 或天守阁 <span class="jp">天守閣</span> 二选一，下午回到中之岛 <span class="jp">中之島</span>/法善寺横丁 <span class="jp">法善寺横丁</span>，晚上吃大阪味道。</p>
         </div>
 
         <article class="day">
@@ -654,7 +776,7 @@
             <img src="assets/osaka-castle.svg" alt="大阪城天守阁插画">
             <div class="cover-caption">
               <span>Osaka Core</span>
-              <h3>大阪城 · 梅田 · 道顿堀</h3>
+              <h3>大阪城 <span class="jp">大阪城</span> · 梅田 <span class="jp">梅田</span> · 道顿堀 <span class="jp">道頓堀</span></h3>
             </div>
           </div>
 
@@ -667,50 +789,50 @@
             </div>
 
             <div class="panel panel-pad">
-              <p class="summary">从住处出发，先去黑门市场吃早餐，再去大阪城一带。午后不赶梅田购物，优先安排大阪历史博物馆、中之岛散步或法善寺横丁，让五个人都有缓冲。</p>
+              <p class="summary">从住处出发，先去黑门市场 <span class="jp">黒門市場</span> 吃早餐，再去大阪城 <span class="jp">大阪城</span> 一带。午后不赶梅田 <span class="jp">梅田</span> 购物，优先安排大阪历史博物馆 <span class="jp">大阪歴史博物館</span>、中之岛 <span class="jp">中之島</span> 散步或法善寺横丁 <span class="jp">法善寺横丁</span>，让五个人都有缓冲。</p>
             </div>
 
             <div class="panel timeline">
               <div class="slot">
                 <div class="time">09:00</div>
                 <div>
-                  <h4>黑门市场早餐</h4>
-                  <p>从住处步行就能到。吃烤扇贝、玉子烧、咖啡或水果，作为轻松开场，不需要太早把大家叫醒。</p>
+                  <h4>黑门市场 <span class="jp">黒門市場</span> 早餐</h4>
+                  <p>从住处步行就能到。吃烤扇贝 <span class="jp">焼きホタテ</span>、玉子烧 <span class="jp">玉子焼き</span>、咖啡 <span class="jp">コーヒー</span> 或水果 <span class="jp">果物</span>，作为轻松开场，不需要太早把大家叫醒。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">10:30</div>
                 <div>
-                  <h4>大阪城公园慢走</h4>
-                  <p>地铁到谷町四丁目或森之宫。先走护城河、城门、天守阁外观，城郭空间感比排队进楼更值得慢慢看。</p>
+                  <h4>大阪城公园 <span class="jp">大阪城公園</span> 慢走</h4>
+                  <p>地铁 <span class="jp">地下鉄</span> 到谷町四丁目 <span class="jp">谷町四丁目</span> 或森之宫 <span class="jp">森ノ宮</span>。先走护城河、城门、天守阁 <span class="jp">天守閣</span> 外观，城郭空间感比排队进楼更值得慢慢看。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">12:30</div>
                 <div>
-                  <h4>大阪历史博物馆或天守阁</h4>
-                  <p>二选一即可：想看大阪城市变迁去历史博物馆；想登高看城景就进天守阁。五个人不建议两个都硬塞。</p>
+                  <h4>大阪历史博物馆 <span class="jp">大阪歴史博物館</span> 或天守阁 <span class="jp">天守閣</span></h4>
+                  <p>二选一即可：想看大阪城市变迁去历史博物馆 <span class="jp">大阪歴史博物館</span>；想登高看城景就进天守阁 <span class="jp">天守閣</span>。五个人不建议两个都硬塞。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">14:30</div>
                 <div>
-                  <h4>中之岛河岸与复古建筑</h4>
-                  <p>天气好就去中之岛散步，看中央公会堂、图书馆外观和河岸风景；累了就找咖啡店坐下。</p>
+                  <h4>中之岛 <span class="jp">中之島</span> 河岸与复古建筑</h4>
+                  <p>天气好就去中之岛 <span class="jp">中之島</span> 散步，看中央公会堂 <span class="jp">大阪市中央公会堂</span>、图书馆外观和河岸风景；累了就找咖啡店 <span class="jp">喫茶店</span> 坐下。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">17:30</div>
                 <div>
-                  <h4>法善寺横丁、水挂不动尊</h4>
-                  <p>回难波走石板小巷，看看水挂不动尊和老大阪街巷气氛。这段文化感浓，也不耗体力。</p>
+                  <h4>法善寺横丁 <span class="jp">法善寺横丁</span>、水挂不动尊 <span class="jp">水掛不動尊</span></h4>
+                  <p>回难波 <span class="jp">なんば</span> 走石板小巷，看看水挂不动尊 <span class="jp">水掛不動尊</span> 和老大阪街巷气氛。这段文化感浓，也不耗体力。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">19:30</div>
                 <div>
-                  <h4>回难波吃晚饭</h4>
-                  <p>吃大阪烧、串炸或居酒屋。饭后沿道顿堀河边散步，想坐游船就看现场余票，不作为硬任务。</p>
+                  <h4>回难波 <span class="jp">なんば</span> 吃晚饭</h4>
+                  <p>吃大阪烧 <span class="jp">お好み焼き</span>、串炸 <span class="jp">串カツ</span> 或居酒屋 <span class="jp">居酒屋</span>。饭后沿道顿堀 <span class="jp">道頓堀</span> 河边散步，想坐游船就看现场余票，不作为硬任务。</p>
                 </div>
               </div>
             </div>
@@ -719,15 +841,15 @@
               <div class="eat-grid">
                 <div class="eat">
                   <b>早餐</b>
-                  <p>黑门市场：烤海鲜、玉子烧、牛串、当季水果。市场店铺时间不完全一致，上午到最稳。</p>
+                  <p>黑门市场 <span class="jp">黒門市場</span>：烤海鲜 <span class="jp">焼き海鮮</span>、玉子烧 <span class="jp">玉子焼き</span>、牛串 <span class="jp">牛串</span>、当季水果 <span class="jp">旬の果物</span>。市场店铺时间不完全一致，上午到最稳。</p>
                 </div>
                 <div class="eat">
                   <b>午餐</b>
-                  <p>大阪城或中之岛附近吃乌冬、咖喱、定食。五个人午餐优先“能坐下、出餐稳”。</p>
+                  <p>大阪城 <span class="jp">大阪城</span> 或中之岛 <span class="jp">中之島</span> 附近吃乌冬 <span class="jp">うどん</span>、咖喱 <span class="jp">カレー</span>、定食 <span class="jp">定食</span>。五个人午餐优先“能坐下、出餐稳”。</p>
                 </div>
                 <div class="eat">
                   <b>晚餐</b>
-                  <p>味乃家 Ajinoya 大阪烧/炒面，或美津の Mizuno；队伍太长就换千日前任意铁板烧店。</p>
+                  <p>味乃家 Ajinoya <span class="jp">味乃家</span> 大阪烧 <span class="jp">お好み焼き</span>/炒面 <span class="jp">焼きそば</span>，或美津の Mizuno <span class="jp">お好み焼 美津の</span>；队伍太长就换千日前 <span class="jp">千日前</span> 任意铁板烧店 <span class="jp">鉄板焼き</span>。</p>
                 </div>
               </div>
             </div>
@@ -746,8 +868,8 @@
     <section id="day3">
       <div class="wrap">
         <div class="section-head">
-          <h2>5/4 周一 · 京都一日</h2>
-          <p>京都这天以寺社、老街和茶点为主。黄金周人会多，所以不追求“清水寺、伏见稻荷、锦市场全满分”，而是早上安静看鸟居，下午慢慢走东山。</p>
+          <h2>5/4 周一 · 京都一日 <span class="jp">京都</span></h2>
+          <p>京都 <span class="jp">京都</span> 这天以寺社 <span class="jp">寺社</span>、老街和茶点为主。黄金周人会多，所以不追求“清水寺 <span class="jp">清水寺</span>、伏见稻荷 <span class="jp">伏見稲荷</span>、锦市场 <span class="jp">錦市場</span> 全满分”，而是早上安静看鸟居 <span class="jp">鳥居</span>，下午慢慢走东山 <span class="jp">東山</span>。</p>
         </div>
 
         <article class="day">
@@ -755,7 +877,7 @@
             <img src="assets/fushimi-inari.svg" alt="伏见稻荷大社千本鸟居插画">
             <div class="cover-caption">
               <span>Kyoto Day</span>
-              <h3>伏见稻荷 · 清水寺 · 祇园</h3>
+              <h3>伏见稻荷 <span class="jp">伏見稲荷</span> · 清水寺 <span class="jp">清水寺</span> · 祇园 <span class="jp">祇園</span></h3>
             </div>
           </div>
 
@@ -764,54 +886,54 @@
               <span class="pill red">绿之日</span>
               <span class="pill teal">早点但不赶</span>
               <span class="pill green">寺社老街</span>
-              <span class="pill gold">抹茶甜品</span>
+              <span class="pill gold">抹茶 <span class="jp">抹茶</span> 甜品</span>
             </div>
 
             <div class="panel panel-pad">
-              <p class="summary">从难波到伏见稻荷大约 1 小时多。建议 07:30 左右出发，先走伏见稻荷的鸟居，再把下午留给清水寺、二年坂三年坂、祇园和一杯抹茶。</p>
+              <p class="summary">从难波 <span class="jp">なんば</span> 到伏见稻荷 <span class="jp">伏見稲荷</span> 大约 1 小时多。建议 07:30 左右出发，先走伏见稻荷的鸟居 <span class="jp">鳥居</span>，再把下午留给清水寺 <span class="jp">清水寺</span>、二年坂三年坂 <span class="jp">二年坂・三年坂</span>、祇园 <span class="jp">祇園</span> 和一杯抹茶 <span class="jp">抹茶</span>。</p>
             </div>
 
             <div class="panel timeline">
               <div class="slot">
                 <div class="time">07:30</div>
                 <div>
-                  <h4>难波 → 伏见稻荷</h4>
-                  <p>常见走法：地铁到淀屋桥，换京阪线到伏见稻荷。五个人同行不要卡太死，路上买咖啡和饭团也没关系。</p>
+                  <h4>难波 <span class="jp">なんば</span> → 伏见稻荷 <span class="jp">伏見稲荷</span></h4>
+                  <p>常见走法：地铁 <span class="jp">地下鉄</span> 到淀屋桥 <span class="jp">淀屋橋</span>，换京阪线 <span class="jp">京阪電車</span> 到伏见稻荷 <span class="jp">伏見稲荷</span>。五个人同行不要卡太死，路上买咖啡 <span class="jp">コーヒー</span> 和饭团 <span class="jp">おにぎり</span> 也没关系。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">08:45</div>
                 <div>
-                  <h4>伏见稻荷大社</h4>
-                  <p>鸟居区域全天开放。走到人少一点的段落就可以折返，把重点放在参拜氛围和森林小路，不必登顶。</p>
+                  <h4>伏见稻荷大社 <span class="jp">伏見稲荷大社</span></h4>
+                  <p>鸟居 <span class="jp">鳥居</span> 区域全天开放。走到人少一点的段落就可以折返，把重点放在参拜氛围和森林小路，不必登顶。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">11:15</div>
                 <div>
-                  <h4>东山午餐与茶点</h4>
-                  <p>到清水寺周边先吃午餐或茶点，再慢慢上坡。五个人先坐下补能量，比饿着挤坡道舒服很多。</p>
+                  <h4>东山 <span class="jp">東山</span> 午餐与茶点</h4>
+                  <p>到清水寺 <span class="jp">清水寺</span> 周边先吃午餐或茶点 <span class="jp">甘味</span>，再慢慢上坡。五个人先坐下补能量，比饿着挤坡道舒服很多。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">13:00</div>
                 <div>
-                  <h4>清水寺、二年坂、三年坂</h4>
-                  <p>清水寺 6:00 开门，下午人也会多，但慢慢走仍然值得。重点看舞台、音羽瀑布和坡道街景。</p>
+                  <h4>清水寺 <span class="jp">清水寺</span>、二年坂 <span class="jp">二年坂</span>、三年坂 <span class="jp">三年坂</span></h4>
+                  <p>清水寺 <span class="jp">清水寺</span> 6:00 开门，下午人也会多，但慢慢走仍然值得。重点看舞台 <span class="jp">清水の舞台</span>、音羽瀑布 <span class="jp">音羽の滝</span> 和坡道街景。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">15:30</div>
                 <div>
-                  <h4>祇园、花见小路、建仁寺周边</h4>
-                  <p>不要追逐艺伎拍照，安静走街巷、看町家门面和小寺院。建仁寺周边比清水坂更适合慢下来。</p>
+                  <h4>祇园 <span class="jp">祇園</span>、花见小路 <span class="jp">花見小路</span>、建仁寺 <span class="jp">建仁寺</span> 周边</h4>
+                  <p>不要追逐艺伎 <span class="jp">芸妓</span> 拍照，安静走街巷、看町家 <span class="jp">町家</span> 门面和小寺院。建仁寺 <span class="jp">建仁寺</span> 周边比清水坂 <span class="jp">清水坂</span> 更适合慢下来。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">17:30</div>
                 <div>
-                  <h4>抹茶甜品，鸭川散步</h4>
-                  <p>茶寮都路里/祇园辻利适合收尾。若排队太长，就买外带抹茶饮，去鸭川边坐一会儿再回大阪。</p>
+                  <h4>抹茶 <span class="jp">抹茶</span> 甜品，鸭川 <span class="jp">鴨川</span> 散步</h4>
+                  <p>茶寮都路里 <span class="jp">茶寮都路里</span>/祇园辻利 <span class="jp">祇園辻利</span> 适合收尾。若排队太长，就买外带抹茶饮 <span class="jp">抹茶ドリンク</span>，去鸭川 <span class="jp">鴨川</span> 边坐一会儿再回大阪。</p>
                 </div>
               </div>
             </div>
@@ -820,15 +942,15 @@
               <div class="eat-grid">
                 <div class="eat">
                   <b>早餐</b>
-                  <p>出发前在便利店买饭团、咖啡；到伏见稻荷后再补稻荷寿司或小吃。</p>
+                  <p>出发前在便利店 <span class="jp">コンビニ</span> 买饭团 <span class="jp">おにぎり</span>、咖啡 <span class="jp">コーヒー</span>；到伏见稻荷 <span class="jp">伏見稲荷</span> 后再补稻荷寿司 <span class="jp">いなり寿司</span> 或小吃。</p>
                 </div>
                 <div class="eat">
                   <b>午餐</b>
-                  <p>东山/祇园吃荞麦面、豆腐料理、亲子丼或定食。五个人尽量选座位多的店，别死守网红店。</p>
+                  <p>东山 <span class="jp">東山</span>/祇园 <span class="jp">祇園</span> 吃荞麦面 <span class="jp">そば</span>、豆腐料理 <span class="jp">豆腐料理</span>、亲子丼 <span class="jp">親子丼</span> 或定食 <span class="jp">定食</span>。五个人尽量选座位多的店，别死守网红店。</p>
                 </div>
                 <div class="eat">
                   <b>甜品/晚餐</b>
-                  <p>祇园辻利抹茶芭菲或外带抹茶饮。晚餐可以在京都简单吃，也可以回难波再吃居酒屋。</p>
+                  <p>祇园辻利 <span class="jp">祇園辻利</span> 抹茶芭菲 <span class="jp">抹茶パフェ</span> 或外带抹茶饮 <span class="jp">抹茶ドリンク</span>。晚餐可以在京都 <span class="jp">京都</span> 简单吃，也可以回难波 <span class="jp">なんば</span> 再吃居酒屋 <span class="jp">居酒屋</span>。</p>
                 </div>
               </div>
             </div>
@@ -836,7 +958,7 @@
             <div class="panel">
               <details>
                 <summary>如果京都人太多</summary>
-                <p>清水寺周边拥堵时，直接从祇园切到建仁寺周边、鸭川或河原町，不要硬走每条坡。休闲文化游最重要的是保留好心情。</p>
+                <p>清水寺 <span class="jp">清水寺</span> 周边拥堵时，直接从祇园 <span class="jp">祇園</span> 切到建仁寺 <span class="jp">建仁寺</span> 周边、鸭川 <span class="jp">鴨川</span> 或河原町 <span class="jp">河原町</span>，不要硬走每条坡。休闲文化游最重要的是保留好心情。</p>
               </details>
             </div>
           </div>
@@ -847,8 +969,8 @@
     <section id="day4">
       <div class="wrap">
         <div class="section-head">
-          <h2>5/5 周二 · 奈良一日</h2>
-          <p>奈良最适合五个人慢慢走：古寺、森林、鹿和老街都在同一个区域。今天不加宇治，不赶第二个城市。</p>
+          <h2>5/5 周二 · 奈良一日 <span class="jp">奈良</span></h2>
+          <p>奈良 <span class="jp">奈良</span> 最适合五个人慢慢走：古寺、森林、鹿 <span class="jp">鹿</span> 和老街都在同一个区域。今天不加宇治 <span class="jp">宇治</span>，不赶第二个城市。</p>
         </div>
 
         <article class="day">
@@ -856,7 +978,7 @@
             <img src="assets/nara-deer.svg" alt="奈良东大寺附近的鹿插画">
             <div class="cover-caption">
               <span>Nara Day</span>
-              <h3>奈良公园 · 东大寺 · 春日大社</h3>
+              <h3>奈良公园 <span class="jp">奈良公園</span> · 东大寺 <span class="jp">東大寺</span> · 春日大社 <span class="jp">春日大社</span></h3>
             </div>
           </div>
 
@@ -865,54 +987,54 @@
               <span class="pill red">儿童节</span>
               <span class="pill teal">近铁直达</span>
               <span class="pill green">自然与寺社</span>
-              <span class="pill gold">柿叶寿司</span>
+              <span class="pill gold">柿叶寿司 <span class="jp">柿の葉寿司</span></span>
             </div>
 
             <div class="panel panel-pad">
-              <p class="summary">从近铁日本桥或大阪难波坐近铁奈良线，快速急行约 35-45 分钟到近铁奈良。奈良比京都松弛，适合把东大寺、春日大社参道、奈良町放慢走。</p>
+              <p class="summary">从近铁日本桥 <span class="jp">近鉄日本橋</span> 或大阪难波 <span class="jp">大阪難波</span> 坐近铁奈良线 <span class="jp">近鉄奈良線</span>，快速急行 <span class="jp">快速急行</span> 约 35-45 分钟到近铁奈良 <span class="jp">近鉄奈良</span>。奈良比京都松弛，适合把东大寺 <span class="jp">東大寺</span>、春日大社参道 <span class="jp">春日大社参道</span>、奈良町 <span class="jp">ならまち</span> 放慢走。</p>
             </div>
 
             <div class="panel timeline">
               <div class="slot">
                 <div class="time">09:00</div>
                 <div>
-                  <h4>近铁日本桥 → 近铁奈良</h4>
-                  <p>住处离日本桥很近，直接上近铁很方便。到站后先买饮料，五个人确认集合点，再步行进奈良公园。</p>
+                  <h4>近铁日本桥 <span class="jp">近鉄日本橋</span> → 近铁奈良 <span class="jp">近鉄奈良</span></h4>
+                  <p>住处离日本桥 <span class="jp">日本橋</span> 很近，直接上近铁 <span class="jp">近鉄</span> 很方便。到站后先买饮料 <span class="jp">ドリンク</span>，五个人确认集合点，再步行进奈良公园 <span class="jp">奈良公園</span>。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">10:00</div>
                 <div>
-                  <h4>奈良公园看鹿</h4>
-                  <p>鹿仙贝一买就尽快喂完。喂完摊开双手示意没有食物，包和纸袋收好，不逗鹿。</p>
+                  <h4>奈良公园 <span class="jp">奈良公園</span> 看鹿 <span class="jp">鹿</span></h4>
+                  <p>鹿仙贝 <span class="jp">鹿せんべい</span> 一买就尽快喂完。喂完摊开双手示意没有食物，包和纸袋收好，不逗鹿。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">10:45</div>
                 <div>
-                  <h4>东大寺大佛殿</h4>
-                  <p>看大佛殿、南大门和木构建筑尺度。这里很有古都文化感，建议留足时间，不只拍照就走。</p>
+                  <h4>东大寺 <span class="jp">東大寺</span> 大佛殿 <span class="jp">大仏殿</span></h4>
+                  <p>看大佛殿 <span class="jp">大仏殿</span>、南大门 <span class="jp">南大門</span> 和木构建筑尺度。这里很有古都文化感，建议留足时间，不只拍照就走。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">12:30</div>
                 <div>
-                  <h4>午餐：釜饭或柿叶寿司</h4>
-                  <p>志津香釜饭常排队，五个人建议先看等位情况；不想等就吃柿叶寿司田中，或买一盒带去公园边休息。</p>
+                  <h4>午餐：釜饭 <span class="jp">釜めし</span> 或柿叶寿司 <span class="jp">柿の葉寿司</span></h4>
+                  <p>志津香釜饭 <span class="jp">釜めし志津香</span> 常排队，五个人建议先看等位情况；不想等就吃柿叶寿司田中 <span class="jp">柿の葉すし本舗たなか</span>，或买一盒带去公园边休息。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">14:30</div>
                 <div>
-                  <h4>春日大社参道或奈良町</h4>
-                  <p>想继续感受神社森林，就走春日大社参道；如果大家脚累，改去奈良町看老房子、杂货和咖啡店。</p>
+                  <h4>春日大社参道 <span class="jp">春日大社参道</span> 或奈良町 <span class="jp">ならまち</span></h4>
+                  <p>想继续感受神社 <span class="jp">神社</span> 森林，就走春日大社参道 <span class="jp">春日大社参道</span>；如果大家脚累，改去奈良町 <span class="jp">ならまち</span> 看老房子、杂货 <span class="jp">雑貨</span> 和咖啡店 <span class="jp">喫茶店</span>。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">16:30</div>
                 <div>
-                  <h4>中谷堂艾草麻糬，慢慢回大阪</h4>
-                  <p>看高速捣麻糬表演看运气，买现做艾草饼即可。17:30 左右返程，晚上别安排太复杂。</p>
+                  <h4>中谷堂 <span class="jp">中谷堂</span> 艾草麻糬 <span class="jp">よもぎ餅</span>，慢慢回大阪</h4>
+                  <p>看高速捣麻糬 <span class="jp">餅つき</span> 表演看运气，买现做艾草饼 <span class="jp">よもぎ餅</span> 即可。17:30 左右返程，晚上别安排太复杂。</p>
                 </div>
               </div>
             </div>
@@ -921,15 +1043,15 @@
               <div class="eat-grid">
                 <div class="eat">
                   <b>早餐</b>
-                  <p>难波/日本桥咖啡、饭团，或到奈良站附近补一份茶泡饭/面包。</p>
+                  <p>难波 <span class="jp">なんば</span>/日本桥 <span class="jp">日本橋</span> 咖啡 <span class="jp">コーヒー</span>、饭团 <span class="jp">おにぎり</span>，或到奈良站 <span class="jp">奈良駅</span> 附近补一份茶泡饭 <span class="jp">お茶漬け</span>/面包 <span class="jp">パン</span>。</p>
                 </div>
                 <div class="eat">
                   <b>午餐</b>
-                  <p>志津香釜饭、柿叶寿司田中。黄金周不想等就外带柿叶寿司加茶。</p>
+                  <p>志津香釜饭 <span class="jp">釜めし志津香</span>、柿叶寿司田中 <span class="jp">柿の葉すし本舗たなか</span>。黄金周不想等就外带柿叶寿司 <span class="jp">柿の葉寿司</span> 加茶 <span class="jp">お茶</span>。</p>
                 </div>
                 <div class="eat">
                   <b>晚餐</b>
-                  <p>回大阪后在新世界或难波吃串炸/居酒屋。五个人如果累了，就近在千日前解决更舒服。</p>
+                  <p>回大阪后在新世界 <span class="jp">新世界</span> 或难波 <span class="jp">なんば</span> 吃串炸 <span class="jp">串カツ</span>/居酒屋 <span class="jp">居酒屋</span>。五个人如果累了，就近在千日前 <span class="jp">千日前</span> 解决更舒服。</p>
                 </div>
               </div>
             </div>
@@ -937,7 +1059,7 @@
             <div class="panel">
               <details>
                 <summary>奈良当天的体力调节</summary>
-                <p>不建议下午再硬塞宇治。黄金周移动成本高，把奈良走舒服，找地方坐下聊天喝茶，会比“多去一个城市”更像度假。</p>
+                <p>不建议下午再硬塞宇治 <span class="jp">宇治</span>。黄金周移动成本高，把奈良 <span class="jp">奈良</span> 走舒服，找地方坐下聊天喝茶 <span class="jp">お茶</span>，会比“多去一个城市”更像度假。</p>
               </details>
             </div>
           </div>
@@ -948,8 +1070,8 @@
     <section id="day5">
       <div class="wrap">
         <div class="section-head">
-          <h2>5/6 周三 · 回程前的大阪</h2>
-          <p>今天是回上海日，也是日本黄金周最后一天。主线放在难波周边慢买慢吃，行李和机场时间最优先，不再安排远距离景点。</p>
+          <h2>5/6 周三 · 回程前的大阪 <span class="jp">大阪</span></h2>
+          <p>今天是回上海日，也是日本黄金周最后一天。主线放在难波 <span class="jp">なんば</span> 周边慢买慢吃，行李和机场时间最优先，不再安排远距离景点。</p>
         </div>
 
         <article class="day">
@@ -957,7 +1079,7 @@
             <img src="assets/dotonbori-day.svg" alt="白天的道顿堀河岸插画">
             <div class="cover-caption">
               <span>Departure Day</span>
-              <h3>黑门市场 · 难波购物 · 关西机场</h3>
+              <h3>黑门市场 <span class="jp">黒門市場</span> · 难波购物 <span class="jp">なんば</span> · 关西机场 <span class="jp">関西国際空港</span></h3>
             </div>
           </div>
 
@@ -970,7 +1092,7 @@
             </div>
 
             <div class="panel panel-pad">
-              <p class="summary">上午留给黑门市场、道具屋筋、法善寺横丁白天散步、BIC Camera/药妆/高岛屋。五个人最后一天最怕行李和时间失控，所以不建议临时跑远。</p>
+              <p class="summary">上午留给黑门市场 <span class="jp">黒門市場</span>、道具屋筋 <span class="jp">道具屋筋</span>、法善寺横丁 <span class="jp">法善寺横丁</span> 白天散步、BIC Camera <span class="jp">ビックカメラ</span>/药妆 <span class="jp">ドラッグストア</span>/高岛屋 <span class="jp">高島屋</span>。五个人最后一天最怕行李和时间失控，所以不建议临时跑远。</p>
             </div>
 
             <div class="panel timeline">
@@ -978,21 +1100,21 @@
                 <div class="time">09:30</div>
                 <div>
                   <h4>退房寄存行李</h4>
-                  <p>问住宿能否寄存；不行就用南海难波/日本桥站储物柜。护照、钱包、机票信息随身。</p>
+                  <p>问住宿能否寄存；不行就用南海难波 <span class="jp">南海なんば</span>/日本桥站 <span class="jp">日本橋駅</span> 储物柜 <span class="jp">コインロッカー</span>。护照、钱包、机票信息随身。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">10:00</div>
                 <div>
-                  <h4>黑门市场与千日前道具屋筋</h4>
-                  <p>吃最后一轮海鲜、小吃，顺路看厨具、杯子、餐具。这里很有大阪生活感，也适合买小物。</p>
+                  <h4>黑门市场 <span class="jp">黒門市場</span> 与千日前道具屋筋 <span class="jp">千日前道具屋筋商店街</span></h4>
+                  <p>吃最后一轮海鲜 <span class="jp">海鮮</span>、小吃 <span class="jp">食べ歩き</span>，顺路看厨具 <span class="jp">調理道具</span>、杯子、餐具 <span class="jp">食器</span>。这里很有大阪生活感，也适合买小物。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">12:30</div>
                 <div>
-                  <h4>难波午餐与伴手礼</h4>
-                  <p>高岛屋地下食品街、Namba Parks、心斋桥筋都方便。五个人可以分头买，约定固定时间地点集合。</p>
+                  <h4>难波 <span class="jp">なんば</span> 午餐与伴手礼 <span class="jp">お土産</span></h4>
+                  <p>高岛屋地下食品街 <span class="jp">高島屋 デパ地下</span>、Namba Parks <span class="jp">なんばパークス</span>、心斋桥筋 <span class="jp">心斎橋筋商店街</span> 都方便。五个人可以分头买，约定固定时间地点集合。</p>
                 </div>
               </div>
               <div class="slot">
@@ -1005,15 +1127,15 @@
               <div class="slot">
                 <div class="time">17:45</div>
                 <div>
-                  <h4>南海难波 → 关西机场</h4>
-                  <p>目标 18:30-19:00 到机场。Rapi:t 快且好放行李；没有合适班次就坐机场急行。</p>
+                  <h4>南海难波 <span class="jp">南海なんば</span> → 关西机场 <span class="jp">関西国際空港</span></h4>
+                  <p>目标 18:30-19:00 到机场。Rapi:t <span class="jp">ラピート</span> 快且好放行李；没有合适班次就坐机场急行 <span class="jp">空港急行</span>。</p>
                 </div>
               </div>
               <div class="slot">
                 <div class="time">21:00</div>
                 <div>
-                  <h4>大阪 → 上海</h4>
-                  <p>机场晚餐可吃拉面、咖喱或便利店。别把最后一餐押在安检后才找。</p>
+                  <h4>大阪 <span class="jp">大阪</span> → 上海</h4>
+                  <p>机场晚餐可吃拉面 <span class="jp">ラーメン</span>、咖喱 <span class="jp">カレー</span> 或便利店 <span class="jp">コンビニ</span>。别把最后一餐押在安检后才找。</p>
                 </div>
               </div>
             </div>
@@ -1022,15 +1144,15 @@
               <div class="eat-grid">
                 <div class="eat">
                   <b>早餐</b>
-                  <p>黑门市场轻食，或难波咖啡店慢慢吃。今天不要吃到影响移动。</p>
+                  <p>黑门市场 <span class="jp">黒門市場</span> 轻食 <span class="jp">軽食</span>，或难波 <span class="jp">なんば</span> 咖啡店 <span class="jp">喫茶店</span> 慢慢吃。今天不要吃到影响移动。</p>
                 </div>
                 <div class="eat">
                   <b>午餐</b>
-                  <p>高岛屋地下食品街、Namba Parks 餐饮层，或麺屋丈六拉面。</p>
+                  <p>高岛屋地下食品街 <span class="jp">高島屋 デパ地下</span>、Namba Parks 餐饮层 <span class="jp">なんばパークス</span>，或麺屋丈六拉面 <span class="jp">麺屋丈六 ラーメン</span>。</p>
                 </div>
                 <div class="eat">
                   <b>机场前</b>
-                  <p>买 551 蓬莱、伴手礼零食、茶点。液体和冷藏品注意托运规则。</p>
+                  <p>买 551 蓬莱 <span class="jp">551蓬莱</span>、伴手礼 <span class="jp">お土産</span> 零食 <span class="jp">お菓子</span>、茶点 <span class="jp">甘味</span>。液体和冷藏品注意托运规则。</p>
                 </div>
               </div>
             </div>
@@ -1038,7 +1160,7 @@
             <div class="panel">
               <details>
                 <summary>如果大家临时想加景点</summary>
-                <p>只建议选择难波附近的上方浮世绘馆、法善寺横丁、道具屋筋或百货地下食品街。海游馆距离和时间压力都更大，除非已提前买到早场票。</p>
+                <p>只建议选择难波 <span class="jp">なんば</span> 附近的上方浮世绘馆 <span class="jp">上方浮世絵館</span>、法善寺横丁 <span class="jp">法善寺横丁</span>、道具屋筋 <span class="jp">道具屋筋</span> 或百货地下食品街 <span class="jp">デパ地下</span>。海游馆 <span class="jp">海遊館</span> 距离和时间压力都更大，除非已提前买到早场票。</p>
               </details>
             </div>
           </div>
@@ -1050,49 +1172,49 @@
       <div class="wrap">
         <div class="section-head">
           <h2>吃什么清单</h2>
-          <p>这部分适合五个人临时换店时用：不一定非得排某一家，但这些品类建议吃到。</p>
+          <p>这部分适合五个人临时换店时用：不一定非得排某一家，但这些品类建议吃到。每个中文名后面都放了日语，现场看菜单更好认。</p>
         </div>
         <div class="grid-3">
           <div class="food-card">
             <img src="assets/takoyaki.svg" alt="章鱼烧插画">
             <div>
-              <h3>大阪：章鱼烧</h3>
-              <p>道顿堀、千日前、黑门市场都能吃。五个人可以买几种口味分着尝，别为了单店排太久。</p>
+              <h3>大阪：章鱼烧 <span class="jp">たこ焼き</span></h3>
+              <p>道顿堀 <span class="jp">道頓堀</span>、千日前 <span class="jp">千日前</span>、黑门市场 <span class="jp">黒門市場</span> 都能吃。五个人可以买几种口味分着尝，别为了单店排太久。</p>
             </div>
           </div>
           <div class="food-card">
             <img src="assets/okonomiyaki.svg" alt="大阪烧插画">
             <div>
-              <h3>大阪：大阪烧和炒面</h3>
-              <p>味乃家、美津の都在难波道顿堀附近。5 人用餐最好提前看等位，排队超长就换座位更多的铁板烧店。</p>
+              <h3>大阪：大阪烧 <span class="jp">お好み焼き</span> 和炒面 <span class="jp">焼きそば</span></h3>
+              <p>味乃家 <span class="jp">味乃家</span>、美津の <span class="jp">お好み焼 美津の</span> 都在难波 <span class="jp">なんば</span> 道顿堀 <span class="jp">道頓堀</span> 附近。5 人用餐最好提前看等位，排队超长就换座位更多的铁板烧店 <span class="jp">鉄板焼き</span>。</p>
             </div>
           </div>
           <div class="food-card">
             <img src="assets/kushikatsu.svg" alt="串炸插画">
             <div>
-              <h3>大阪：新世界串炸</h3>
-              <p>串カツだるま是经典，记住蘸酱不要二次蘸。红姜、莲藕、牛肉很有大阪味。</p>
+              <h3>大阪：新世界 <span class="jp">新世界</span> 串炸 <span class="jp">串カツ</span></h3>
+              <p>串カツだるま <span class="jp">串かつだるま</span> 是经典，记住蘸酱不要二次蘸。红姜 <span class="jp">紅しょうが</span>、莲藕 <span class="jp">れんこん</span>、牛肉 <span class="jp">牛肉</span> 很有大阪味。</p>
             </div>
           </div>
           <div class="food-card">
             <img src="assets/soba.svg" alt="荞麦面插画">
             <div>
-              <h3>京都：荞麦面和豆腐</h3>
-              <p>清水寺/祇园/河原町一带选择多。想稳妥就吃荞麦面、豆腐料理、亲子丼。</p>
+              <h3>京都：荞麦面 <span class="jp">そば</span> 和豆腐 <span class="jp">豆腐</span></h3>
+              <p>清水寺 <span class="jp">清水寺</span>/祇园 <span class="jp">祇園</span>/河原町 <span class="jp">河原町</span> 一带选择多。想稳妥就吃荞麦面 <span class="jp">そば</span>、豆腐料理 <span class="jp">豆腐料理</span>、亲子丼 <span class="jp">親子丼</span>。</p>
             </div>
           </div>
           <div class="food-card">
             <img src="assets/matcha.svg" alt="抹茶甜品插画">
             <div>
-              <h3>京都：抹茶甜品</h3>
-              <p>祇园辻利/茶寮都路里适合下午或傍晚。排队长就买外带抹茶饮和点心，去鸭川边休息。</p>
+              <h3>京都：抹茶甜品 <span class="jp">抹茶スイーツ</span></h3>
+              <p>祇园辻利 <span class="jp">祇園辻利</span>/茶寮都路里 <span class="jp">茶寮都路里</span> 适合下午或傍晚。排队长就买外带抹茶饮 <span class="jp">抹茶ドリンク</span> 和点心 <span class="jp">甘味</span>，去鸭川 <span class="jp">鴨川</span> 边休息。</p>
             </div>
           </div>
           <div class="food-card">
             <img src="assets/kakinoha-sushi.svg" alt="柿叶寿司插画">
             <div>
-              <h3>奈良：柿叶寿司和麻糬</h3>
-              <p>柿叶寿司适合午餐或伴手礼；中谷堂艾草麻糬适合回站前买一块热的。</p>
+              <h3>奈良：柿叶寿司 <span class="jp">柿の葉寿司</span> 和麻糬 <span class="jp">餅</span></h3>
+              <p>柿叶寿司 <span class="jp">柿の葉寿司</span> 适合午餐或伴手礼 <span class="jp">お土産</span>；中谷堂 <span class="jp">中谷堂</span> 艾草麻糬 <span class="jp">よもぎ餅</span> 适合回站前买一块热的。</p>
             </div>
           </div>
         </div>
@@ -1103,43 +1225,43 @@
       <div class="wrap">
         <div class="section-head">
           <h2>交通票券与小提醒</h2>
-          <p>住在难波最大的好处是机场线、近铁奈良线、去京都的地铁/京阪线都方便。五个人同行，清楚集合点比多做一个景点更重要。</p>
+          <p>住在难波 <span class="jp">なんば</span> 最大的好处是机场线、近铁奈良线 <span class="jp">近鉄奈良線</span>、去京都的地铁 <span class="jp">地下鉄</span>/京阪线 <span class="jp">京阪電車</span> 都方便。五个人同行，清楚集合点比多做一个景点更重要。</p>
         </div>
         <div class="grid-3">
           <div class="tool-card">
             <span class="tag">机场</span>
-            <h3>南海 Rapi:t</h3>
-            <p>关西机场到南海难波最快约 34 分钟，指定席，适合带行李。回程建议提前查班次并预留机场安检时间。</p>
+            <h3>南海 Rapi:t <span class="jp">ラピート</span></h3>
+            <p>关西机场 <span class="jp">関西国際空港</span> 到南海难波 <span class="jp">南海なんば</span> 最快约 34 分钟，指定席 <span class="jp">指定席</span>，适合带行李。回程建议提前查班次并预留机场安检时间。</p>
           </div>
           <div class="tool-card">
             <span class="tag">大阪市内</span>
-            <h3>IC 卡更适合慢游</h3>
-            <p>休闲文化版不靠付费景点堆数量，普通 IC 卡更灵活。周游卡只有在当天临时加入多个付费项目时再考虑。</p>
+            <h3>IC 卡 <span class="jp">ICカード</span> 更适合慢游</h3>
+            <p>休闲文化版不靠付费景点堆数量，普通 IC 卡 <span class="jp">ICカード</span> 更灵活。周游卡 <span class="jp">大阪周遊パス</span> 只有在当天临时加入多个付费项目时再考虑。</p>
           </div>
           <div class="tool-card">
             <span class="tag">京都</span>
             <h3>早出门最值</h3>
-            <p>伏见稻荷全天开放，清水寺 6:00 开门。黄金周京都最贵的是人流，不是交通费。</p>
+            <p>伏见稻荷 <span class="jp">伏見稲荷</span> 全天开放，清水寺 <span class="jp">清水寺</span> 6:00 开门。黄金周京都最贵的是人流，不是交通费。</p>
           </div>
           <div class="tool-card">
             <span class="tag">奈良</span>
             <h3>近铁最顺</h3>
-            <p>从近铁日本桥或大阪难波到近铁奈良，快速急行约 35-45 分钟，到站后步行进公园。</p>
+            <p>从近铁日本桥 <span class="jp">近鉄日本橋</span> 或大阪难波 <span class="jp">大阪難波</span> 到近铁奈良 <span class="jp">近鉄奈良</span>，快速急行 <span class="jp">快速急行</span> 约 35-45 分钟，到站后步行进公园。</p>
           </div>
           <div class="tool-card">
             <span class="tag">现金</span>
             <h3>小店备现金</h3>
-            <p>市场、老店、鹿仙贝摊位、部分拉面店更适合现金。每天带一些 1000 日元纸币和硬币。</p>
+            <p>市场 <span class="jp">市場</span>、老店 <span class="jp">老舗</span>、鹿仙贝 <span class="jp">鹿せんべい</span> 摊位、部分拉面店 <span class="jp">ラーメン店</span> 更适合现金。每天带一些 1000 日元纸币和硬币。</p>
           </div>
           <div class="tool-card">
             <span class="tag">预约</span>
             <h3>五人晚餐提前看</h3>
-            <p>热门餐厅、Rapi:t 指定席、京都午餐都建议提前看。5 人现场临时找座位会比 2 人难，晚餐尤其要留备选。</p>
+            <p>热门餐厅 <span class="jp">人気店</span>、Rapi:t <span class="jp">ラピート</span> 指定席 <span class="jp">指定席</span>、京都午餐都建议提前看。5 人现场临时找座位会比 2 人难，晚餐尤其要留备选。</p>
           </div>
           <div class="tool-card">
             <span class="tag">同行</span>
             <h3>每天一个集合点</h3>
-            <p>京都、奈良容易有人想多拍或买东西，建议每天约定固定集合点和时间，比如车站闸口、寺社门口或咖啡店门口。</p>
+            <p>京都 <span class="jp">京都</span>、奈良 <span class="jp">奈良</span> 容易有人想多拍或买东西，建议每天约定固定集合点和时间，比如车站闸口 <span class="jp">改札口</span>、寺社门口或咖啡店 <span class="jp">喫茶店</span> 门口。</p>
           </div>
         </div>
       </div>
